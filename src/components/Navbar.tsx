@@ -57,7 +57,7 @@ export default function Navbar() {
   }, [menuOpen]);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-black/10 bg-white">
+    <header className="sticky top-0 z-50 w-full bg-white shadow-lg shadow-black/5">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
         <Link href="/" className="flex items-center" aria-label="CodePremi home">
           <Image
@@ -133,6 +133,9 @@ export default function Navbar() {
         </button>
       </nav>
 
+      {/* Pink separator */}
+      <div className="h-px w-full bg-primary" />
+
       {/* Mobile menu */}
       <AnimatePresence>
         {menuOpen && (
@@ -142,7 +145,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="overflow-hidden border-t border-black/10 bg-white md:hidden"
+            className="overflow-hidden bg-white md:hidden"
           >
             <ul className="flex flex-col items-center gap-1 px-4 py-3">
               {navLinks.map(({ label, href }) => {

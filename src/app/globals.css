@@ -6,8 +6,6 @@
   --foreground: #ffffff;
   --primary: #ec407a; /* pink */
   --primary-hover: #d81b60;
-  --accent: #fb8c00; /* orange */
-  --accent-hover: #ef6c00;
   --subtitle: #546e7a; /* blue-grey for subtitles */
 }
 
@@ -16,15 +14,13 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-primary-hover: var(--primary-hover);
-  --color-accent: var(--accent);
-  --color-accent-hover: var(--accent-hover);
   --color-subtitle: var(--subtitle);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #ffffff;
+  color: #0a0a0a;
   font-family: Arial, Helvetica, sans-serif;
 }
