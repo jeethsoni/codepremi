@@ -18,7 +18,7 @@ const slides: Slide[] = [
   {
     image: "/sliders/bg-00.jpeg",
     eyebrow: "Howdy!",
-    title: "CodePremi: { Born: To Code }",
+    title: "CodePremi:\n{ Born To Code }",
     subtitle: "Yes, we love to code!",
     stats: [
       { value: "120+", label: "Projects Shipped" },
@@ -144,7 +144,7 @@ export default function Hero() {
 
             <motion.h1
               variants={item}
-              className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-6xl md:text-7xl"
+              className="mt-6 whitespace-pre-line text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-6xl md:text-7xl"
             >
               {active.title}
             </motion.h1>
@@ -184,11 +184,10 @@ export default function Hero() {
             onClick={() => goTo(i)}
             aria-label={`Go to slide ${i + 1}`}
             aria-current={i === index}
-            className={`h-2.5 rounded-full transition-all duration-300 ${
-              i === index
+            className={`h-2.5 rounded-full transition-all duration-300 ${i === index
                 ? "w-8 bg-primary"
                 : "w-2.5 bg-white/50 hover:bg-white/80"
-            }`}
+              }`}
           />
         ))}
       </div>

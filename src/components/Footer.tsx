@@ -183,7 +183,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-8 sm:flex-row">
           <p className="text-sm text-white/50">
-            &copy; {new Date().getFullYear()} CodePremi. Born to code.
+            &copy; {new Date().getFullYear()} CodePremi: Born to code.
           </p>
           <p className="text-sm text-white/50">
             Made with <span className="text-primary">&#9829;</span> by CodePremi
